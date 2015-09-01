@@ -88,8 +88,7 @@ app.get('/hello', function(req, res) {
     }
   }
   
-  var date = new Date();
-  res.write('<p/>Timestamp: ' + date);
+  res.write('<p/>Timestamp: ' + new Date().toISOString().replace('T', ' ').substr(0, 19));
   res.write('</body></html>');
   res.end();
 });
