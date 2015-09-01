@@ -74,19 +74,21 @@ app.get('/pagecount', function (req, res) {
 });
 
 app.get('/hello', function(req, res) {
-  res.write('Hello World!\n');
-  
+  res.write('<html><body>');
+  res.write('<h1>Hello World!<h1>');
+  res.write('<hr/>');
   var os = require('os');
   var interfaces = os.networkInterfaces();
   for (var k in interfaces) {
     for (var k2 in interfaces[k]) {
         var address = interfaces[k][k2];
-        res.write('Address: ' + address.address + '\n');
+        res.write('<p/>Server: ' + address.address);
     }
   }
   
   var date = new Date();
-  res.write('\nTimestamp: ' + date);
+  res.write('<p/>Timestamp: ' + date);
+  res.write('</body></html>');
   res.end();
 });
 
