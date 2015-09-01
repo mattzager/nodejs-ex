@@ -82,7 +82,7 @@ app.get('/hello', function(req, res) {
   for (var k in interfaces) {
     for (var k2 in interfaces[k]) {
         var address = interfaces[k][k2];
-        if(address.slice(0, "10.".length) == "10.") {
+        if(address.address.slice(0, "10.".length) == "10.") {
           res.write('<p/>Server: ' + address.address);
         }
     }
