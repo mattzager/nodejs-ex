@@ -75,7 +75,7 @@ app.get('/pagecount', function (req, res) {
 
 app.get('/hello', function(req, res) {
   res.write('<html><body>');
-  res.write('<h1>Hello World v2!</h1>');
+  res.write('<h1>Hello World!</h1>');
   res.write('<hr/>');
   var os = require('os');
   var interfaces = os.networkInterfaces();
