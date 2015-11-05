@@ -10,10 +10,6 @@ var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
 var ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 app.get('/', function (req, res) {
-  res.render('index.html', { pageCountMessage : null});
-});
-
-app.get('/hello', function(req, res) {
   res.write('<html><body>');
   res.write('<h1><font color="green">Hello World!</font></h1>');
   res.write('<hr/>');
@@ -27,7 +23,6 @@ app.get('/hello', function(req, res) {
         }
     }
   }
-  
   res.write('<p/>Timestamp: ' + new Date().toISOString().replace('T', ' ').substr(0, 19));
   res.write('</body></html>');
   res.end();
