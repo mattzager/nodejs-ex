@@ -4,9 +4,7 @@
   "description": "Node.js sample app for OpenShift 3",
   "main": "server.js",
   "dependencies": {
-      "express": "*",
-      "mongodb": "*",
-      "ejs": "*"
+      "express": "*"
   },
   "engine": {
     "node": "*",
@@ -17,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/openshift/nodejs-ex.git"
+    "url": "http://github.com/mattzager/nodejs-ex.git"
   },
-  "author": "Steve Speicher <sspeiche@gmail.com>",
+  "author": "Matt Zager <mzager@redhat.com>",
   "license": "",
   "bugs": {
-    "url": "http://github.com/openshift/nodejs-ex/issues"
+    "url": "http://github.com/mattzager/nodejs-ex/issues"
   },
-  "homepage": "http://github.com/openshift/nodejs-ex"
+  "homepage": "http://github.com/mattzager/nodejs-ex"
 }
