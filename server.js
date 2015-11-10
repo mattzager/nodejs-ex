@@ -7,7 +7,7 @@ var ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 app.get('/', function (req, res) {
 res.write('<html><body>');
-  res.write('<h1>Hello OpenShift v3</h1>');
+  res.write('<h1>Hello OpenShift v3!!!</h1>');
   res.write('<hr/>');
   var os = require('os');
   var interfaces = os.networkInterfaces();
